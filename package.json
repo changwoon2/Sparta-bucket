@@ -1,0 +1,24 @@
+{
+  "name": "sparta-bucket",
+  "version": "1.0.0",
+  "description": "Sparta-bucket 2023",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changwoon2/Sparta-bucket.git"
+  },
+  "author": "bexel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/changwoon2/Sparta-bucket/issues"
+  },
+  "homepage": "https://github.com/changwoon2/Sparta-bucket#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  }
+}
