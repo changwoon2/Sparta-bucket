@@ -17,7 +17,7 @@ mongoose
   .catch((e) => console.log("MongoDB error: ", e));
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello World! 명지전문대학 명지명지");
 });
 
 app.post("/register", (req, res) => {
