@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const bodyParser = require("body-parser");
+
+const config = require("./config/key");
+
 const { User } = require("./models/User");
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -10,9 +13,7 @@ app.use(bodyParser.json());
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 mongoose
-  .connect(
-    "mongodb+srv://changwoon2:easymaster2@bighero.webu5ma.mongodb.net/?retryWrites=true&w=majority"
-  )
+  .connect(config.mongoURI)
   .then(() => console.log("MongoDB Connected..."))
   .catch((e) => console.log("MongoDB error: ", e));
 
